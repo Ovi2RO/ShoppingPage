@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: #2a2833;
+    height: 100%;
+}
+
+.logo{
+    width: 60px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
+    box-shadow: 0 5px 15px rgba(16, 185, 157, 0.9);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #09b690;
+    transition: 0.3s;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #0ce41e;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #0ce41e;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.home_page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_logo{
+    width: 300px;
+    padding-top: 30px;
+}
+
+.home_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    text-align: center;
+    color: #09b690;
+}
+
+#username{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #09b690;
+    text-align: center;
+
+}
+
+#password{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #09b690;
+    text-align: center;
+}
+
+#login_btn{
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #09b690;
+    cursor: pointer;
+}
+
+footer{
+    color: #09b690;
+    clear:both;
+    position: relative;
+    margin-top: 300px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #09b690;
+}
+
+footer a:hover{
+    color: #0ce41e;
+}
